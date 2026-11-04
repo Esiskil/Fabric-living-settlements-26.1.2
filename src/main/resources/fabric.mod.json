@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "living-settlements",
+	"version": "${version}",
+	"name": "Living Settlements",
+	"description": "Transform Minecraft villages into a living strategy! Manage settlements, towns, taxes, AI personalities, and economies without bulky maps.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": ""
+	},
+	"license": "MIT-License",
+	"icon": "assets/living-settlements/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.esiskil.living.settlements.LivingSettlements"
+		],
+		"fabric-datagen": [
+			"net.esiskil.living.settlements.LivingSettlementsDataGenerator"
+		]
+	},
+	"mixins": [
+		"living-settlements.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
